@@ -34,14 +34,20 @@ export function Hero() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[var(--border)] bg-[var(--surface)] text-xs text-[var(--text-secondary)]">
+        {/* Badge — fade up, delay 0 */}
+        <div
+          className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full border border-[var(--border)] bg-[var(--surface)] text-xs text-[var(--text-secondary)]"
+          style={{ animation: "heroFadeUp 0.5s ease-out both" }}
+        >
           <MapPin size={11} className="text-[var(--accent)]" />
-          <span>Cambridge · Full-stack · AI-augmented</span>
+          <span>London-based · Full-stack · AI-augmented</span>
         </div>
 
-        {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight leading-[1.08] text-balance mb-6">
+        {/* Headline — fade up, delay 100ms */}
+        <h1
+          className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight leading-[1.08] text-balance mb-6"
+          style={{ animation: "heroFadeUp 0.5s ease-out 0.1s both" }}
+        >
           Websites and web apps
           <br />
           <span
@@ -56,17 +62,23 @@ export function Hero() {
           </span>
         </h1>
 
-        {/* Subheading */}
-        <p className="max-w-xl mx-auto text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-10">
+        {/* Subheading — fade up, delay 250ms */}
+        <p
+          className="max-w-xl mx-auto text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-10"
+          style={{ animation: "heroFadeUp 0.5s ease-out 0.25s both" }}
+        >
           I build fast, conversion-focused digital products for founders and small businesses — in days, not months.
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+        {/* CTAs — fade up, delay 400ms */}
+        <div
+          className="flex flex-col sm:flex-row items-center justify-center gap-3"
+          style={{ animation: "heroFadeUp 0.5s ease-out 0.4s both" }}
+        >
           <a
             href="#work"
             onClick={handleScrollToWork}
-            className="inline-flex items-center gap-2 h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium hover:bg-[var(--accent-hover)] transition-all duration-150 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium transition-all duration-150 active:scale-[0.98] hover:brightness-110 hover:-translate-y-px"
           >
             See my work
             <ArrowRight size={15} />
@@ -75,7 +87,7 @@ export function Hero() {
             href="https://calendly.com/vantixai"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 h-11 px-6 rounded-[var(--radius)] border border-[var(--border)] text-[var(--text-primary)] text-sm font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-150 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 h-11 px-6 rounded-[var(--radius)] border border-[var(--border)] text-[var(--text-primary)] text-sm font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-150 active:scale-[0.98] hover:brightness-110 hover:-translate-y-px"
           >
             Book a free call
           </a>

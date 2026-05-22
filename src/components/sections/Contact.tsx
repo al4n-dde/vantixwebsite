@@ -6,14 +6,39 @@ import { Send, Mail } from "lucide-react";
 export function Contact() {
   const [status, setStatus] = React.useState<"idle" | "success">("idle");
   const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    setError(null);
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      project: (form.elements.namedItem("project") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const json = await res.json();
+
+      if (!res.ok) {
+        setError(json.error ?? "Something went wrong. Please try again.");
+      } else {
+        setStatus("success");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
       setLoading(false);
-      setStatus("success");
-    }, 800);
+    }
   };
 
   return (
@@ -56,7 +81,7 @@ export function Contact() {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Message sent!</h3>
                 <p className="text-sm text-[var(--text-secondary)]">
-                  Thanks — I&apos;ll be in touch shortly.
+                  Thanks — I&apos;ll be in touch within 24 hours.
                 </p>
               </div>
             ) : (
@@ -100,10 +125,18 @@ export function Contact() {
                     className="w-full px-4 py-3 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--background)] text-sm text-[var(--text-primary)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors resize-none"
                   />
                 </div>
+
+                {/* Inline error */}
+                {error && (
+                  <p className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-[var(--radius)] px-4 py-2.5">
+                    {error}
+                  </p>
+                )}
+
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium hover:bg-[var(--accent-hover)] transition-colors disabled:opacity-60 disabled:cursor-not-allowed active:scale-[0.98]"
+                  className="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed active:scale-[0.98] hover:brightness-110 hover:-translate-y-px"
                 >
                   {loading ? (
                     <>

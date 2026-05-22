@@ -72,7 +72,7 @@ export function Services() {
           {services.map((service) => (
             <article
               key={service.slug}
-              className="group relative flex flex-col p-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--accent)]/40 hover:bg-[var(--surface-2)] transition-all duration-200"
+              className="group relative flex flex-col p-6 rounded-xl border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--accent)]/40 hover:bg-[var(--surface-2)] hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-all duration-200"
             >
               {/* Icon */}
               <div className="w-10 h-10 rounded-lg bg-[var(--accent-subtle)] text-[var(--accent)] flex items-center justify-center mb-5">

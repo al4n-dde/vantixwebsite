@@ -9,14 +9,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "VantixAI — Websites and web apps that actually work",
+  title: {
+    default: "VantixAI — Web Developer London | Websites & Web Apps That Convert",
+    template: "%s | VantixAI — Web Developer London",
+  },
   description:
-    "Full-stack developer building fast, conversion-focused digital products for founders and small businesses. Cambridge · AI-augmented.",
+    "London-based full-stack developer building websites, web apps and automations for founders and small businesses. Fast delivery, production-grade quality.",
   metadataBase: new URL("https://vantixai.com"),
   openGraph: {
-    title: "VantixAI — Websites and web apps that actually work",
+    title: "VantixAI — Web Developer London | Websites & Web Apps That Convert",
     description:
-      "Full-stack developer building fast, conversion-focused digital products for founders and small businesses.",
+      "London-based full-stack developer building websites, web apps and automations for founders and small businesses. Fast delivery, production-grade quality.",
     url: "https://vantixai.com",
     siteName: "VantixAI",
     type: "website",

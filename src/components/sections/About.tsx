@@ -1,11 +1,5 @@
 import * as React from "react";
 
-const stats = [
-  { label: "Projects shipped", value: "5+" },
-  { label: "University", value: "Cambridge" },
-  { label: "Workflow", value: "AI-first" },
-];
-
 export function About() {
   return (
     <section id="about" className="py-24 px-6">
@@ -30,27 +24,16 @@ export function About() {
 
           {/* Text */}
           <div className="order-1 md:order-2">
-            <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-8">
-              I&apos;m Alan — a physics student at Cambridge and full-stack developer who builds digital products for founders and small businesses. I combine technical depth with design sensibility to ship things that actually work, not just look good in Figma.
+            <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
+              I&apos;m Alan — a full-stack developer and AI builder based in London, Cambridge-trained, who builds digital products for founders and small businesses. I combine technical depth with design sensibility to ship things that actually work, not just look good in Figma.
             </p>
             <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-10">
-              I&apos;m AI-augmented, which means I move faster than a traditional agency and charge a fraction of the price. If you need something built properly, let&apos;s talk.
+              AI-augmented workflow means I move faster than a traditional agency at a fraction of the cost. If you need something built properly, let&apos;s talk.
             </p>
 
-            {/* Stats */}
-            <div className="flex flex-wrap gap-3">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="flex flex-col px-4 py-3 rounded-xl border border-[var(--border)] bg-[var(--surface)]"
-                >
-                  <span className="text-lg font-semibold text-[var(--text-primary)]">
-                    {stat.value}
-                  </span>
-                  <span className="text-xs text-[var(--text-muted)]">{stat.label}</span>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm text-[var(--text-muted)]">
+              London-based · Cambridge-trained · Available for new projects
+            </p>
           </div>
         </div>
       </div>

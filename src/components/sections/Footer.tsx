@@ -10,7 +10,7 @@ export function Footer() {
           <span className="text-[var(--accent)]">AI</span>
         </span>
         <p className="text-xs text-[var(--text-muted)]">
-          © {new Date().getFullYear()} VantixAI. All rights reserved.
+          © {new Date().getFullYear()} VantixAI. London & Cambridge.
         </p>
         <nav className="flex items-center gap-5">
           <Link href="#work" className="text-xs text-[var(--text-muted)] hover:text-[var(--text-secondary)] transition-colors">Work</Link>
