@@ -20,7 +20,7 @@ export function About() {
             <div className="aspect-[4/5] max-w-sm rounded-2xl overflow-hidden bg-[var(--surface)] border border-[var(--border)]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://i.ibb.co/GvxfX7YC"
+                src="https://i.ibb.co/rG7Kgk85/6-F8-D2-E1-B-B8-E4-4-DA0-9767-BF0179-E3-D9-CF.jpg"
                 alt="Alan — VantixAI founder"
                 className="w-full h-full object-cover"
               />

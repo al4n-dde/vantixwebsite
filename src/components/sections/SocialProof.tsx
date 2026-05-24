@@ -1,11 +1,11 @@
 import * as React from "react";
 
 const clients = [
-  { name: "Omnisio",                 src: "https://i.ibb.co/GvpJ9qc9" },
-  { name: "The Renaissance",         src: "https://i.ibb.co/rGN0bX6K" },
-  { name: "PULSE Collective",        src: "https://i.ibb.co/rRWtdXfG" },
-  { name: "Joseph Removals",         src: "https://i.ibb.co/rK062Qss" },
-  { name: "Antz Gardening Services", src: "https://i.ibb.co/XxRP2NH8" },
+  { name: "Omnisio",                 src: "https://i.ibb.co/QFQck4rk/Untitled-design-34-bs0x34-Photoroom.png" },
+  { name: "The Renaissance",         src: "https://i.ibb.co/xSdLmrjK/52-F942-A8-1-EFE-4-FA3-9-CCB-7-B5-DD6-E35-F95-4-5005-c-Photoroom.png" },
+  { name: "PULSE Collective",        src: "https://i.ibb.co/PvSYDVzZ/3-B90-BA19-34-A3-4-B58-9-EF3-5-DEE729088-C7.png" },
+  { name: "Joseph Removals",         src: "https://i.ibb.co/0p2Myntt/edited-photo-1.png" },
+  { name: "Antz Gardening Services", src: "https://i.ibb.co/yFjCfG2S/Whats-App-Image-2026-02-06-at-10-57-00-1-removebg-preview.png" },
 ];
 
 export function SocialProof() {

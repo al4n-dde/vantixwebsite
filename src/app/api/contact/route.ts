@@ -28,8 +28,8 @@ export async function POST(request: NextRequest) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
-      from: "VantixAI Contact <onboarding@resend.dev>",
-      to: "info@vantixai.com",
+      from: "VantixAI Contact <info@vantixai.com>",
+      to: "alan@vantixai.com",
       replyTo: email.trim(),
       subject: `New enquiry from ${name.trim()}`,
       text: `Name: ${name.trim()}\nEmail: ${email.trim()}\n\nProject:\n${project.trim()}`,
