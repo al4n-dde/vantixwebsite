@@ -67,7 +67,7 @@ export default function WebAppsPage() {
               <p className="text-sm text-[var(--text-muted)] mb-2">Scoped per project. Most MVPs land between £3k–£8k.</p>
               <p className="text-xs text-[var(--text-muted)] mb-6">Free scoping call to get an accurate quote.</p>
               <a
-                href="https://calendly.com/vantixai"
+                href="https://calendly.com/alanaddae/introductory-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full justify-center items-center h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium hover:bg-[var(--accent-hover)] transition-colors"

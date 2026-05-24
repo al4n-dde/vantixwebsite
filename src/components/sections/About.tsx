@@ -15,10 +15,15 @@ export function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="order-2 md:order-1">
-            <div className="aspect-[4/5] max-w-sm rounded-2xl bg-[var(--surface)] border border-[var(--border)] flex items-center justify-center">
-              <span className="text-sm text-[var(--text-muted)]">Photo coming soon</span>
+            <div className="aspect-[4/5] max-w-sm rounded-2xl overflow-hidden bg-[var(--surface)] border border-[var(--border)]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://i.ibb.co/GvxfX7YC"
+                alt="Alan — VantixAI founder"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 

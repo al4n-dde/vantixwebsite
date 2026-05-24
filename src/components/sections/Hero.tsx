@@ -84,7 +84,7 @@ export function Hero() {
             <ArrowRight size={15} />
           </a>
           <a
-            href="https://calendly.com/vantixai"
+            href="https://calendly.com/alanaddae/introductory-call"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 h-11 px-6 rounded-[var(--radius)] border border-[var(--border)] text-[var(--text-primary)] text-sm font-medium hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-150 active:scale-[0.98] hover:brightness-110 hover:-translate-y-px"

@@ -60,10 +60,10 @@ export function Contact() {
             <div className="flex items-center gap-3 p-4 rounded-xl border border-[var(--border)] bg-[var(--background)] w-fit">
               <Mail size={16} className="text-[var(--accent)]" />
               <a
-                href="mailto:hello@vantixai.com"
+                href="mailto:info@vantixai.com"
                 className="text-sm text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors"
               >
-                hello@vantixai.com
+                info@vantixai.com
               </a>
             </div>
 

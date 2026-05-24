@@ -66,7 +66,7 @@ export default function AutomationPage() {
               <div className="text-3xl font-semibold mb-1">From £800</div>
               <p className="text-sm text-[var(--text-muted)] mb-6">Most automation projects complete within 1–2 weeks.</p>
               <a
-                href="https://calendly.com/vantixai"
+                href="https://calendly.com/alanaddae/introductory-call"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full justify-center items-center h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium hover:bg-[var(--accent-hover)] transition-colors"

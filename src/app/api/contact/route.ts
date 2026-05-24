@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "VantixAI Contact <onboarding@resend.dev>",
-      to: "hello@vantixai.com",
+      to: "info@vantixai.com",
       replyTo: email.trim(),
       subject: `New enquiry from ${name.trim()}`,
       text: `Name: ${name.trim()}\nEmail: ${email.trim()}\n\nProject:\n${project.trim()}`,
@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     console.error("Resend error:", err);
     return NextResponse.json(
-      { error: "Failed to send message. Please try again or email hello@vantixai.com directly." },
+      { error: "Failed to send message. Please try again or email info@vantixai.com directly." },
       { status: 500 }
     );
   }

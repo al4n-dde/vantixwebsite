@@ -67,7 +67,7 @@ export function NavBar() {
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-3">
             <a
-              href="https://calendly.com/vantixai"
+              href="https://calendly.com/alanaddae/introductory-call"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 h-9 px-4 text-sm font-medium rounded-[var(--radius)] bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors duration-150"
@@ -100,7 +100,7 @@ export function NavBar() {
               </a>
             ))}
             <a
-              href="https://calendly.com/vantixai"
+              href="https://calendly.com/alanaddae/introductory-call"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 inline-flex justify-center items-center h-10 px-4 text-sm font-medium rounded-[var(--radius)] bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors"

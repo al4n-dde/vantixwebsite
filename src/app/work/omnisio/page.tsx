@@ -138,7 +138,7 @@ export default function OmnisioCaseStudy() {
             Have a similar project in mind?
           </p>
           <a
-            href="https://calendly.com/vantixai"
+            href="https://calendly.com/alanaddae/introductory-call"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 h-11 px-6 rounded-[var(--radius)] bg-[var(--accent)] text-white text-sm font-medium hover:bg-[var(--accent-hover)] transition-colors"

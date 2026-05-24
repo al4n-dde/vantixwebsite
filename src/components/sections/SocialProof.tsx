@@ -1,11 +1,11 @@
 import * as React from "react";
 
-const placeholderLogos = [
-  "Client A",
-  "Client B",
-  "Client C",
-  "Client D",
-  "Client E",
+const clients = [
+  { name: "Omnisio",                 src: "https://i.ibb.co/GvpJ9qc9" },
+  { name: "The Renaissance",         src: "https://i.ibb.co/rGN0bX6K" },
+  { name: "PULSE Collective",        src: "https://i.ibb.co/rRWtdXfG" },
+  { name: "Joseph Removals",         src: "https://i.ibb.co/rK062Qss" },
+  { name: "Antz Gardening Services", src: "https://i.ibb.co/XxRP2NH8" },
 ];
 
 export function SocialProof() {
@@ -17,13 +17,18 @@ export function SocialProof() {
         </p>
 
         {/* Logo row */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-14">
-          {placeholderLogos.map((name) => (
+        <div className="flex flex-wrap items-center justify-center gap-8 mb-14">
+          {clients.map((client) => (
             <div
-              key={name}
-              className="h-10 w-28 rounded-lg bg-[var(--surface-2)] border border-[var(--border)] flex items-center justify-center"
+              key={client.name}
+              className="h-10 w-28 flex items-center justify-center"
             >
-              <span className="text-xs text-[var(--text-muted)]">{name}</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={client.src}
+                alt={`${client.name} logo`}
+                className="max-h-10 max-w-[7rem] w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-150"
+              />
             </div>
           ))}
         </div>
