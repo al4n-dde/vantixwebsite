@@ -2,8 +2,14 @@ import Link from "next/link";
 import { ArrowLeft, Check } from "lucide-react";
 
 export const metadata = {
-  title: "Web App / Product Build — VantixAI",
-  description: "Full-stack product development from idea to deployment. APIs, databases, auth, payments — the full stack.",
+  title: "Web App & MVP Development London",
+  description: "Full-stack web app development for startups and founders. APIs, databases, auth, payments — idea to production. London-based developer.",
+  alternates: { canonical: "https://vantixai.com/services/web-apps" },
+  openGraph: {
+    title: "Web App & MVP Development London | VantixAI",
+    description: "Full-stack product development from idea to launch. From £3,000.",
+    url: "https://vantixai.com/services/web-apps",
+  },
 };
 
 const included = [

@@ -2,8 +2,14 @@ import Link from "next/link";
 import { ArrowLeft, Check } from "lucide-react";
 
 export const metadata = {
-  title: "Website Design & Dev — VantixAI",
-  description: "Custom websites that convert visitors into customers. Fast, performance-optimised, and built to reflect your brand.",
+  title: "Website Design & Development London",
+  description: "Custom websites built to convert — not templates. Performance-optimised, mobile-first, and designed to reflect your brand. London-based web developer.",
+  alternates: { canonical: "https://vantixai.com/services/web-design" },
+  openGraph: {
+    title: "Website Design & Development London | VantixAI",
+    description: "Custom websites built to convert. From £1,500. Performance-optimised, mobile-first.",
+    url: "https://vantixai.com/services/web-design",
+  },
 };
 
 const included = [

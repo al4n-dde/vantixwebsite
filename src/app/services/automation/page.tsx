@@ -2,8 +2,14 @@ import Link from "next/link";
 import { ArrowLeft, Check } from "lucide-react";
 
 export const metadata = {
-  title: "Automation & Integrations — VantixAI",
-  description: "Connect your tools, automate your workflows, and stop doing things manually.",
+  title: "Automation & Integrations London",
+  description: "Connect your tools, automate your workflows, and save hours every week. Zapier, Make, n8n, or custom-built. London-based automation developer.",
+  alternates: { canonical: "https://vantixai.com/services/automation" },
+  openGraph: {
+    title: "Automation & Integrations London | VantixAI",
+    description: "Stop doing things manually. Custom automations and integrations from £800.",
+    url: "https://vantixai.com/services/automation",
+  },
 };
 
 const included = [

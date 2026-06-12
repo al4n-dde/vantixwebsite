@@ -4,8 +4,15 @@ import { ArrowLeft } from "lucide-react";
 const techStack = ["Next.js 14", "Supabase", "Stripe Connect", "TypeScript", "Tailwind CSS", "Vercel"];
 
 export const metadata = {
-  title: "Omnisio — VantixAI Case Study",
-  description: "A full-stack marketplace platform built in 6 weeks with Next.js, Supabase, and Stripe Connect.",
+  title: "Omnisio — Full-Stack Marketplace Case Study",
+  description: "How I built Omnisio — a full marketplace platform with Stripe Connect payouts, real-time dashboards, and seller onboarding — in 6 weeks.",
+  alternates: { canonical: "https://vantixai.com/work/omnisio" },
+  openGraph: {
+    title: "Omnisio — Full-Stack Marketplace Case Study | VantixAI",
+    description: "Full marketplace built in 6 weeks — Next.js 14, Supabase, Stripe Connect. Live in production.",
+    url: "https://vantixai.com/work/omnisio",
+    type: "article",
+  },
 };
 
 export default function OmnisioCaseStudy() {
